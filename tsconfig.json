@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "preserve",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "jest"
+    ],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "next.config.js",
+    "tailwind.config.js",
+    ".eslintrc.js",
+    "pages/**/*.{ts,tsx}",
+    "app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "api/**/*.{ts,tsx}",
+    "utils/**/*.{ts,tsx}",
+    "styles/**/*.{css,scss}",
+    "public/**/*.{js,jsx,ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cypress"
+  ]
+}
